@@ -21,7 +21,7 @@ export default function ConfirmDialog({
       <DialogTitle sx={{fontSize:Theme.font16Bold,color:Colors.black}}>{title}</DialogTitle>
 
       <DialogContent>
-        <DialogContentText sx={{fontSize:Theme. font14SemiBold,color:Colors.black}}>
+        <DialogContentText sx={{fontSize:Theme.font14SemiBold,color:Colors.black}}>
           {message}
         </DialogContentText>
       </DialogContent>

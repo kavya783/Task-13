@@ -18,7 +18,7 @@ import CommonButton from "../components/CommonButton";
 import { doc, getDoc, deleteDoc } from "firebase/firestore";
 import { Theme } from "../GlobalStyles";
 import Colors from "../Colors";
-import { Grid } from "@mui/material";
+
 
 function ProductDetails({ darkMode, toggleDarkMode }) {
   const { id } = useParams();

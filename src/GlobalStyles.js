@@ -1,4 +1,4 @@
-import Colors from "./Colors";
+
  
 export const Theme = {
 container: {
@@ -60,12 +60,6 @@ container: {
      fontWeight:'bold',  
    
   },
-  font16SemiBold:{
-    fontFamily: 'Poppins-SemiBold, sans-serif',
-    fontSize: 14,
-     fontWeight:'bold',  
-   
-
-  }
+ 
  
 };

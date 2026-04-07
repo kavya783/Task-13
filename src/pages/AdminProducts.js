@@ -105,7 +105,9 @@ function AdminProducts({ darkMode, toggleDarkMode }) {
       <AppBarr darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Box
         sx={{
-          backgroundColor: darkMode ? Colors.black : Colors.white,       
+          backgroundColor: darkMode ? Colors.black : Colors.white,
+          minHeight: "100vh",
+          
           overflowY: "auto",
           position:"absolute",
         }}

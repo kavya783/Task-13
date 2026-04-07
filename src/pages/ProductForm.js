@@ -7,7 +7,7 @@ import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import { useNavigate } from "react-router-dom";
 import CommonButton from "../components/CommonButton";
-import Grid from "@mui/material/Grid";
+
 import {
   collection,
   addDoc,
@@ -292,7 +292,7 @@ export default function ProductForm({ productId, isEdit = false, darkMode, toggl
             <CommonButton
               sx={{
                 fontSize: " font16Regular",
-                color: darkMode ? Colors.white : Colors.black, bgcolor: darkMode ? Colors.blue : Colors.violet, fontSize: Theme.font16Bold
+                color: darkMode ? Colors.white : Colors.black, bgcolor: darkMode ? Colors.blue : Colors.violet, fontSize:Theme.font16Bold
               }}
               onClick={() => navigate("/admin/products")}
               startIcon={<ArrowBackIcon />}
