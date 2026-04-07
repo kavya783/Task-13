@@ -9,7 +9,7 @@ export default function AppRouter({ darkMode, toggleDarkMode }) {
   return (
     <Routes>
       <Route
-        path="/admin"
+        path=""
         element={
           <AdminDashboard
             darkMode={darkMode}
