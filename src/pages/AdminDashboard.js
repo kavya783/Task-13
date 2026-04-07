@@ -238,7 +238,7 @@ function AdminDashboard({ darkMode, toggleDarkMode }) {
 
             <CommonButton
               variant="contained"
-              sx={{ color: darkMode ? Colors.white : Colors.green, bgcolor: darkMode ? Colors.green : Colors.green, }}
+              sx={{ color: darkMode ? Colors.white : Colors.white, bgcolor: darkMode ? Colors.green : Colors.green, }}
               onClick={handleUser}
             >
               User
