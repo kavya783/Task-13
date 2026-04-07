@@ -8,6 +8,8 @@ import ProductDetails from "../pages/ProductDetails";
 export default function AppRouter({ darkMode, toggleDarkMode }) {
   return (
     <Routes>
+        <Route path="/" element={<AdminDashboard />} />
+
       <Route
         path="/admin"
         element={
