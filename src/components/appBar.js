@@ -22,7 +22,7 @@ const AppBarr = ({ darkMode, toggleDarkMode }) => {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor:Colors.violet,
+        backgroundColor:  Colors.violet,
       }}
     >
       <Toolbar

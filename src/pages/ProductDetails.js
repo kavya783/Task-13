@@ -19,6 +19,7 @@ import { doc, getDoc, deleteDoc } from "firebase/firestore";
 import { Theme } from "../GlobalStyles";
 import Colors from "../Colors";
 
+
 function ProductDetails({ darkMode, toggleDarkMode }) {
   const { id } = useParams();
   const navigate = useNavigate();

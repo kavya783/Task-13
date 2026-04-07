@@ -41,11 +41,11 @@ function NavBar({ role, darkMode }) {
         height: "100%"
       }}
     >
-      <Link to="" style={{ textDecoration: "none" }}>
+      <Link to="/admin" style={{ textDecoration: "none" }}>
         <Typography
           sx={{
             ...linkStyles,
-            ...(location.pathname === "" && {
+            ...(location.pathname === "/admin" && {
               backgroundColor: darkMode ? "#1e1e1e" : Colors.white,
               color: Colors.red,
               fontSize:Theme.font16SemiBold,
