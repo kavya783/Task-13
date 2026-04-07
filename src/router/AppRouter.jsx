@@ -9,7 +9,7 @@ export default function AppRouter({ darkMode, toggleDarkMode }) {
   return (
     <Routes>
       <Route
-        path=""
+        path="/admin"
         element={
           <AdminDashboard
             darkMode={darkMode}
@@ -18,7 +18,7 @@ export default function AppRouter({ darkMode, toggleDarkMode }) {
         }
       />
       <Route
-        path=""
+        path="/admin/products"
         element={
           <AdminProducts
             darkMode={darkMode}
@@ -27,7 +27,7 @@ export default function AppRouter({ darkMode, toggleDarkMode }) {
         }
       />
       <Route
-        path=""
+        path="/admin/products/add"
         element={
           <ProductForm
             darkMode={darkMode}
@@ -36,7 +36,7 @@ export default function AppRouter({ darkMode, toggleDarkMode }) {
         }
       />
       <Route
-        path=""
+        path="/admin/products/edit/:id"
         element={
           <ProductEdit
             darkMode={darkMode}
@@ -45,7 +45,7 @@ export default function AppRouter({ darkMode, toggleDarkMode }) {
         }
       />
       <Route
-        path=""
+        path="/admin/products/:id"
         element={
           <ProductDetails
             darkMode={darkMode}

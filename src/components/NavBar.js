@@ -41,11 +41,11 @@ function NavBar({ role, darkMode }) {
         height: "100%"
       }}
     >
-      <Link to="" style={{ textDecoration: "none" }}>
+      <Link to="/admin" style={{ textDecoration: "none" }}>
         <Typography
           sx={{
             ...linkStyles,
-            ...(location.pathname === "" && {
+            ...(location.pathname === "/admin" && {
               backgroundColor: darkMode ? "#1e1e1e" : Colors.white,
               color: Colors.red,
               fontSize:Theme.font16SemiBold,
@@ -58,11 +58,11 @@ function NavBar({ role, darkMode }) {
 
       <Divider />
 
-      <Link to="" style={{ textDecoration: "none" }}>
+      <Link to="/admin/products" style={{ textDecoration: "none" }}>
         <Typography
           sx={{
             ...linkStyles,
-            ...(location.pathname === "" && {
+            ...(location.pathname === "/admin/products" && {
               backgroundColor: darkMode ? "#1e1e1e" : Colors.white,
               color: Colors.red,
               fontSize:Theme.font16SemiBold,
@@ -76,11 +76,11 @@ function NavBar({ role, darkMode }) {
       <Divider />
 
       {(roled === "admin" || !roled) && (
-        <Link to="" style={{ textDecoration: "none" }}>
+        <Link to="/admin/products/add" style={{ textDecoration: "none" }}>
           <Typography
             sx={{
               ...linkStyles,
-              ...(location.pathname === "" && {
+              ...(location.pathname === "/admin/products/add" && {
                 backgroundColor: darkMode ? "#1e1e1e" : Colors.white,
                 color:Colors.red,
                 fontSize:Theme.font16SemiBold,

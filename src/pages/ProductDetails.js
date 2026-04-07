@@ -19,7 +19,6 @@ import { doc, getDoc, deleteDoc } from "firebase/firestore";
 import { Theme } from "../GlobalStyles";
 import Colors from "../Colors";
 
-
 function ProductDetails({ darkMode, toggleDarkMode }) {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -56,7 +55,7 @@ function ProductDetails({ darkMode, toggleDarkMode }) {
   const handleConfirmDelete = async () => {
     await deleteDoc(doc(db, "products", product.id));
     setOpenDialog(false);
-    navigate("");
+    navigate("/admin/products");
   };
 
   const handleCancelDelete = () => setOpenDialog(false);
@@ -177,7 +176,7 @@ function ProductDetails({ darkMode, toggleDarkMode }) {
                         size="small"
                         onClick={() =>
                           navigate(
-                            `${product.id}?role=admin`
+                            `/admin/products/edit/${product.id}?role=admin`
                           )
                         }
                       >

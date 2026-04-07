@@ -15,8 +15,8 @@ import { Theme } from '../GlobalStyles';
 
 
 export default function ProductTable({ products, onDelete, role, darkMode }) {
-  console.log("darkMode", darkMode);
-  console.log("green", Colors.green);
+console.log("darkMode",darkMode);
+console.log("green", Colors.green);
 
   const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -31,11 +31,11 @@ export default function ProductTable({ products, onDelete, role, darkMode }) {
             sx={{
               mb: 2,
               width: "100%",
-              boxShadow: darkMode
-                ? `0px 4px 10px ${Colors.white}`
-                : `0px 4px 10px ${Colors.black}`,
-              backgroundColor: darkMode ? Colors.black : Colors.white,
-              color: darkMode ? Colors.white : Colors.black,
+             boxShadow: darkMode
+      ? `0px 4px 10px ${Colors.white}`
+      : `0px 4px 10px ${Colors.black}`,
+             backgroundColor: darkMode ? Colors.black : Colors.white,
+             color: darkMode ?Colors.white: Colors.black,
 
 
             }}
@@ -66,9 +66,9 @@ export default function ProductTable({ products, onDelete, role, darkMode }) {
 
                 <CommonButton
                   variant="contained"
-                  sx={{ backgroundColor: darkMode ? Colors.green : Colors.green, color: darkMode ? Colors.white : Colors.black, fontSize: Theme.font14Bold, }}
+                  sx={{ backgroundColor: darkMode ? Colors.green : Colors.green,  color: darkMode ?Colors.white: Colors.black, fontSize: Theme.font14Bold, }}
                   size="small"
-                  onClick={() => navigate(`${row.id}?role=${role}`)}
+                  onClick={() => navigate(`/admin/products/${row.id}?role=${role}`)}
                 >
                   View
                 </CommonButton>
@@ -76,16 +76,16 @@ export default function ProductTable({ products, onDelete, role, darkMode }) {
                   <>
                     <CommonButton
                       variant="contained"
-                      sx={{ backgroundColor: Colors.blue, color: darkMode ? Colors.white : Colors.black, fontSize: Theme.font14Bold, }}
+                      sx={{ backgroundColor: Colors.blue,  color: darkMode ?Colors.white: Colors.black, fontSize: Theme.font14Bold, }}
                       size="small"
-                      onClick={() => navigate(`${row.id}`)}
+                      onClick={() => navigate(`/admin/products/edit/${row.id}`)}
                     >
                       Edit
                     </CommonButton>
 
                     <CommonButton
                       variant="contained"
-                      sx={{ backgroundColor: Colors.red, color: darkMode ? Colors.white : Colors.black, fontSize: Theme.font14Bold, }}
+                      sx={{ backgroundColor: Colors.red, color: darkMode ?Colors.white: Colors.black, fontSize: Theme.font14Bold, }}
                       size="small"
                       onClick={() => onDelete(row.id)}
                     >
@@ -110,7 +110,7 @@ export default function ProductTable({ products, onDelete, role, darkMode }) {
 
           <TableHead>
             <TableRow sx={{ bgcolor: darkMode ? Colors.white : Colors.violet, height: 50, border: 2 }}>
-              <TableCell sx={{ fontSize: Theme.font16Bold, color: Colors.black }}>S.No</TableCell>
+              <TableCell sx={{ fontSize: Theme.font16Bold, color: Colors.black  }}>S.No</TableCell>
               <TableCell sx={{ fontSize: Theme.font16Bold, color: Colors.black }}>Title</TableCell>
               <TableCell align="center" sx={{ fontSize: Theme.font16Bold, color: Colors.black }}>Price</TableCell>
               <TableCell align="center" sx={{ fontSize: Theme.font16Bold, color: Colors.black }}>Category</TableCell>
@@ -143,7 +143,7 @@ export default function ProductTable({ products, onDelete, role, darkMode }) {
                       variant="contained"
                       sx={{ backgroundColor: Colors.green, color: darkMode ? Colors.white : Colors.black, fontSize: Theme.font14Bold, }}
                       size="small"
-                      onClick={() => navigate(`${row.id}?role=${role}`)}
+                      onClick={() => navigate(`/admin/products/${row.id}?role=${role}`)}
                     >
                       View
                     </CommonButton>
@@ -154,7 +154,7 @@ export default function ProductTable({ products, onDelete, role, darkMode }) {
                           variant="contained"
                           sx={{ backgroundColor: Colors.blue, color: darkMode ? Colors.white : Colors.black, fontSize: Theme.font14Bold }}
                           size="small"
-                          onClick={() => navigate(`${row.id}`)}
+                          onClick={() => navigate(`/admin/products/edit/${row.id}`)}
                         >
                           Edit
                         </CommonButton>
