@@ -291,7 +291,7 @@ export default function ProductForm({ productId, isEdit = false, darkMode, toggl
           >
             <CommonButton
               sx={{
-                fontSize: " font16Regular",
+               
                 color: darkMode ? Colors.white : Colors.black, bgcolor: darkMode ? Colors.blue : Colors.violet, fontSize:Theme.font16Bold
               }}
               onClick={() => navigate("/admin/products")}
