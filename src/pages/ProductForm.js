@@ -96,7 +96,7 @@ export default function ProductForm({ productId, isEdit = false, darkMode, toggl
       }
 
       setSnackbarOpen(true);
-      setTimeout(() => navigate("/admin/products"), 1500);
+      setTimeout(() => navigate(""), 1500);
     } catch (error) {
       console.error("Error saving product: ", error);
     }
@@ -294,7 +294,7 @@ export default function ProductForm({ productId, isEdit = false, darkMode, toggl
                
                 color: darkMode ? Colors.white : Colors.black, bgcolor: darkMode ? Colors.blue : Colors.violet, fontSize:Theme.font16Bold
               }}
-              onClick={() => navigate("/admin/products")}
+              onClick={() => navigate("")}
               startIcon={<ArrowBackIcon />}
             >
               Back

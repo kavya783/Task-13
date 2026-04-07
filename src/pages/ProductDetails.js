@@ -56,7 +56,7 @@ function ProductDetails({ darkMode, toggleDarkMode }) {
   const handleConfirmDelete = async () => {
     await deleteDoc(doc(db, "products", product.id));
     setOpenDialog(false);
-    navigate("/admin/products");
+    navigate("");
   };
 
   const handleCancelDelete = () => setOpenDialog(false);
@@ -177,7 +177,7 @@ function ProductDetails({ darkMode, toggleDarkMode }) {
                         size="small"
                         onClick={() =>
                           navigate(
-                            `/admin/products/edit/${product.id}?role=admin`
+                            `${product.id}?role=admin`
                           )
                         }
                       >
